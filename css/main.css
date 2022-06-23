@@ -1,0 +1,104 @@
+/* Manrope  */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+
+}
+
+:root {
+
+/* PRIMARY */
+
+    --lightCyan: hsl(193, 38%, 86%);
+    --neonGreen: hsl(150, 100%, 66%);
+
+/* NEUTRAL */
+
+    --grayishBlue : hsl(217,19%,38%);
+    --darkGrayishBlue : hsl(217,19%,24%);
+    --darkBlue : hsl(218,23%,16%);
+
+/* FONT SIZE */
+
+    --quoteSize : 28px;
+
+/* FONT FAMILY */
+
+    --manrope : 'Manrope';
+
+/* FONT WEIGHT */
+    --800:800;
+
+}
+
+body {
+    font-family: var(--manrope);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--darkBlue);
+    padding-inline: 2em;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+    background-color: var(--darkGrayishBlue);
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+    background-image: url(../images/pattern-divider-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 75%;
+    background-size: 80%;
+    padding:1.5em;
+}
+
+h1 {
+    font-size: .5em;
+    color:var(--neonGreen);
+    padding-bottom:1.3em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+
+
+p{
+    font-size: var(--quoteSize);
+    color:var(--lightCyan);
+    padding-bottom: 1em;
+}
+
+.dice {
+    position: absolute;
+    bottom: 2px;
+    left:4px;
+    padding: .4em;
+    cursor: pointer;
+}
+
+
+
+#dice--box {
+    background-color: var(--neonGreen);
+    width: 25px;
+    height: 25px;
+    position: relative;
+    left:165px;
+    top:48px;
+    padding: .6em;
+    border-radius: 50px;
+    z-index: 0;
+    cursor: pointer;
+}
+
+
+#dice--box:hover{
+    box-shadow: 0px 0px 20px var(--neonGreen);
+
+}
